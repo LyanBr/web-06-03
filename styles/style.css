@@ -3,7 +3,7 @@
 :root {
     --cor-primaria: #000000;
     --cor-secundaria: #F6F6F6;
-    --cor-terciaria: #22D4FD;
+    --cor-terciaria: #6a0063;
     --cor-hover: #272727;
 
     --fonte-primaria: 'Krona One', sans-serif;
@@ -101,4 +101,51 @@ body{
     font-family: var(--fonte-secundaria);
     font-size: 1.5rem;
     font-weight: 400;
+}
+@media (max-width: 1200px){
+    .cabecalho{
+        padding: 2%;
+        
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .apresentacao_imagem{
+        padding: 3%;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 3% 10%;
+    }
+    .apresentacao_imagem{
+        padding: 1%;
+        padding-bottom: 3%;
+        width: 60%;
+    }
+}
+@media (max-width: 600px){
+    
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .apresentacao_imagem{
+        padding: 4%;
+        width: 60%;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
+    .cabecalho{
+        padding: 2% 0% 0% 0%;
+    }
+    .cabecalho__menu{
+        display: flex;
+        gap: 40px;
+    }
+    .apresentacao{
+        padding: 0% 0%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
