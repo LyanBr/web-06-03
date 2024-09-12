@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="styles/estilizarform.css">
+</head>
+<body>
+
+<form id="portfolioForm">
+    <div class="mb-3">
+        <label for="tituloForm" class="form-label">Digite o título do seu Portfólio</label>
+        <input type="text" class="form-control" id="tituloForm">
+    </div>
+    <div class="mb-3">
+        <label for="descricaoForm" class="form-label">Descrição</label>
+        <input type="text" class="form-control" id="descricaoForm">
+    </div>
+    <h1>Adicione uma foto sua:</h1>
+    <div class="mb-3 form-check">
+        <input type="file" class="form-img" id="imagemForm" accept="image/*">
+    </div>
+    <button type="submit" class="btn btn-primary">enviar</button>
+    <button type="button" class="btn btn-secondary" onclick="window.location.href='index.html';">Voltar ao Início</button>
+</form>
+<script src="script/script.js"></script>
+
+</body>
+</html>
